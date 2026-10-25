@@ -3,18 +3,18 @@
 // title : the name shown on the card
 // cat   : oxidation | displacement | combustion | synthesis | decomposition | neutralization | general
 window.VIDEOS = [
-    { id: "SwpSZnutu4A", title: "Chemistry video 1", cat: "general" },
-    { id: "vwr5XyCUM6U", title: "Chemistry video 2", cat: "general" },
-    { id: "_ACOUYU5eUo", title: "Chemistry video 3", cat: "general" },
-    { id: "9tRT63n0dUY", title: "Chemistry video 4", cat: "general" },
-    { id: "K6c9qfa1xiM", title: "Chemistry video 5", cat: "general" },
-    { id: "By0vYtbJEwM", title: "Chemistry video 6", cat: "general" },
-    { id: "Rg5Axws3gq8", title: "Chemistry video 7", cat: "general" },
-    { id: "OcJQIsQDjDI", title: "Chemistry video 8", cat: "general" },
-    { id: "GeP_88fQH3E", title: "Chemistry video 9", cat: "general" },
-    { id: "UyNFYDMU1jE", title: "Chemistry video 10", cat: "general" },
-    { id: "OiCOzNkZpg4", title: "Chemistry video 11", cat: "general" },
-    { id: "uq_GxmS3kao", title: "Chemistry video 12", cat: "general" },
-    { id: "nllj1rKtW8Q", title: "Chemistry video 13", cat: "general" },
-    { id: "eRFRlnDHceY", title: "Chemistry video 14", cat: "general" }
+    { id: "SwpSZnutu4A", title: "Laboratory preparation of Methane", cat: "synthesis" },
+    { id: "vwr5XyCUM6U", title: "Laboratory preparation of Ethene", cat: "synthesis" },
+    { id: "_ACOUYU5eUo", title: "Natural Gas & Propane Animated Video", cat: "combustion" },
+    { id: "9tRT63n0dUY", title: "Butane lab", cat: "combustion" },
+    { id: "K6c9qfa1xiM", title: "Bromination of Pentane", cat: "general" },
+    { id: "By0vYtbJEwM", title: "What is Hexane C6H14?", cat: "general" },
+    { id: "Rg5Axws3gq8", title: "Benefits of Heptane and the Best Place to Buy!", cat: "general" },
+    { id: "OcJQIsQDjDI", title: "Octane Defined", cat: "general" },
+    { id: "GeP_88fQH3E", title: "Nonane | Wikipedia audio article", cat: "general" },
+    { id: "UyNFYDMU1jE", title: "Decane | Wikipedia audio article", cat: "general" },
+    { id: "OiCOzNkZpg4", title: "Partial Oxidation of Primary Alcohols | AQA A-Level Chemistry", cat: "oxidation" },
+    { id: "uq_GxmS3kao", title: "Iodoform Test (The Yellow Precipitate Experiment)", cat: "general" },
+    { id: "nllj1rKtW8Q", title: "Iodoform Test of Ethanol", cat: "general" },
+    { id: "eRFRlnDHceY", title: "Esterification Reaction between Alcohol and Carboxylic Acid", cat: "synthesis" }
 ];
