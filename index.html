@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Chemistry - Reactions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Animation (3D Molecules) -->
+    <div class="background-animation">
+        <div class="molecule-wrapper mol-1">
+            <div class="molecule">
+                <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+                <div class="node n4"></div><div class="node n5"></div><div class="node n6"></div>
+                <div class="bond b1"></div><div class="bond b2"></div><div class="bond b3"></div>
+                <div class="bond b4"></div><div class="bond b5"></div><div class="bond b6"></div>
+            </div>
+        </div>
+        <div class="molecule-wrapper mol-2">
+            <div class="molecule">
+                <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+                <div class="bond b1"></div><div class="bond b2"></div><div class="bond b3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-img-container">
+                <img src="logo.png" alt="Nexus Chemistry Logo" class="logo-img">
+            </div>
+            <div class="logo-text">
+                <h1><span class="highlight-n">N</span><span class="rest-text">exus Chemistry</span></h1>
+                <span>CHEMISTRY PROJECT</span>
+            </div>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Navigation Drawer -->
+    <div class="nav-menu" id="nav-menu">
+        <button class="close-btn" id="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#reaction-details"><i class="fa-solid fa-flask"></i> Reactions</a></li>
+            <li><a href="#videos"><i class="fa-solid fa-circle-play"></i> Videos</a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+            <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Resources</a></li>
+        </ul>
+        <a href="#" class="btn-safety">Safety Precautions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Discover & Explore <br><span class="gold-text">Reactions</span></h1>
+            <p>Search for any element and discover its chemical reactions. Browse by category to find balanced equations, detailed explanations, and more.</p>
+            <button id="explore-btn" class="btn-primary">Explore Reactions <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="hero-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Search for an element... (e.g., Chlorine, Sodium)">
+            </div>
+
+            <p class="category-label">BROWSE BY CATEGORY</p>
+
+            <div class="category-grid" id="category-grid">
+                <div class="card" data-category="oxidation">
+                    <i class="fa-solid fa-fire-flame-curved card-icon"></i>
+                    <span>Oxidation</span>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+                <div class="card" data-category="displacement">
+                    <i class="fa-solid fa-arrow-right-arrow-left card-icon"></i>
+                    <span>Displacement</span>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+                <div class="card" data-category="combustion">
+                    <i class="fa-solid fa-fire card-icon"></i>
+                    <span>Combustion</span>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+                <div class="card" data-category="synthesis">
+                    <i class="fa-solid fa-plus card-icon"></i>
+                    <span>Synthesis</span>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+                <div class="card" data-category="decomposition">
+                    <i class="fa-solid fa-arrow-down card-icon"></i>
+                    <span>Decomposition</span>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+                <div class="card" data-category="neutralization">
+                    <i class="fa-solid fa-flask card-icon"></i>
+                    <span>Neutralization</span>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="learn-more">
+                <i class="fa-regular fa-lightbulb"></i>
+                <div>
+                    <h4>Learn More</h4>
+                    <p>Quick guides, key concepts and useful tips.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reaction Results Section -->
+    <section id="reaction-details" class="reaction-section">
+        <div class="section-header">
+            <h2 id="results-title">Explore <span class="gold-text">Reactions</span></h2>
+            <p id="results-subtitle">Use the search bar or select a category to get started.</p>
+        </div>
+
+        <div class="reaction-container" id="reaction-container">
+            <div class="empty-state" id="empty-state">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Start Your Search</h3>
+                <p>Type an element name above to see its reactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="reaction-section video-section">
+        <div class="section-header">
+            <h2>Chemistry <span class="gold-text">Videos</span></h2>
+            <p>Watch the reactions in action, sorted by topic.</p>
+        </div>
+        <div id="video-tabs" class="video-tabs"></div>
+        <div id="video-grid" class="video-grid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Created by 
+            <a href="https://wa.me/201501586434" target="_blank" rel="noopener noreferrer" class="gold-text developer-link">
+                Dr. Youssef Ehab <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </p>
+    </footer>
+
+    <script src="videos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
